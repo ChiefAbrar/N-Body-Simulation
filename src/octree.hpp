@@ -11,7 +11,7 @@ struct BoundingBox {
     double halfWidth = 1.0;
 
     bool contains(const Vector& p) const {
-        return std::abs(p.x - center.x) <= halfWidth && std::abs(p.y - center.y) && std::abs(p.z - center.z) <= halfWidth;
+        return std::abs(p.x - center.x) <= halfWidth && std::abs(p.y - center.y) <= halfWidth && std::abs(p.z - center.z) <= halfWidth;
     }
 };
 class OctreeNode {
