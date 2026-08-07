@@ -16,7 +16,7 @@ struct BoundingBox {
 };
 class OctreeNode {
     public:
-    explicit OctreeNode(const BoundingBox& box);
+        explicit OctreeNode(const BoundingBox& box);
         void insert(const Body* b);
 
         void computeForce(const Body& b, double theta, double G, double softening, Vector& outAcc) const;
