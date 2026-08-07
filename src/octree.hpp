@@ -2,6 +2,7 @@
 #define OCTREE_HPP
 
 #include <vector>
+#include <memory>
 #include "vector.hpp"
 #include "body.hpp"
 
@@ -16,7 +17,7 @@ struct BoundingBox {
 class OctreeNode {
     public:
     explicit OctreeNode(const BoundingBox& box);
-        void inset(const Body* b);
+        void insert(const Body* b);
 
         void computeForce(const Body& b, double theta, double G, double softening, Vector& outAcc) const;
         bool isLeaf() const {
