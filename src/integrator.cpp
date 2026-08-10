@@ -4,4 +4,6 @@
 #include <vector>
 #include <cmath>
 
-void computeAccelerations(std::vector<Body>& bodies, const SimParams& p) {}
+void computeAccelerations(std::vector<Body>& bodies, const SimParams& p) {
+    
+}
